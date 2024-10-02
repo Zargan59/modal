@@ -1,6 +1,7 @@
 {
+  "homepage": "https://github.com/Zargan59/modal",
   "name": "modal-library-op-tristan",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Modal with React",
   "author": "Zargan59",
   "license": "MIT",
@@ -23,9 +24,7 @@
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build"
   },
-  "peerDependencies": {
-    "react": "^16.0.0"
-  },
+ 
   "devDependencies": {
     "microbundle-crl": "^0.13.10",
     "babel-eslint": "^10.0.3",
