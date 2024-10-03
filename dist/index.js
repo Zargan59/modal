@@ -1,24 +1,30 @@
-function Modal(message, isOpen) {
-  var _useState = useState(isOpen),
-    modalIsOpen = _useState[0],
-    setModalIsOpen = _useState[1];
+function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
+
+var React = require('react');
+var React__default = _interopDefault(React);
+
+function Modal(_ref) {
+  var message = _ref.message,
+    isOpen = _ref.isOpen,
+    setIsOpen = _ref.setIsOpen;
   var handleClose = function handleClose() {
-    setModalIsOpen(false);
+    setIsOpen(false);
   };
   var handleClickOutsideModal = function handleClickOutsideModal(e) {
-    if (e.target.className == "modal") {
+    if (e.target.className === "modal") {
+      console.log("Ferme la modale");
       handleClose();
     }
   };
-  return /*#__PURE__*/React.createElement("div", {
-    className: modalIsOpen ? "backgroundModal " : "hidde"
-  }, /*#__PURE__*/React.createElement("div", {
+  return /*#__PURE__*/React__default.createElement("div", {
+    className: isOpen ? "backgroundModal " : "hidde"
+  }, /*#__PURE__*/React__default.createElement("div", {
     className: "modal",
     onClick: handleClickOutsideModal
-  }, /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React__default.createElement("div", {
     className: "closeContent",
     onClick: handleClose
-  }, /*#__PURE__*/React.createElement("p", null, "X")), /*#__PURE__*/React.createElement("p", {
+  }, /*#__PURE__*/React__default.createElement("p", null, "X")), /*#__PURE__*/React__default.createElement("p", {
     className: "message"
   }, message, " ")));
 }

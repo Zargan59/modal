@@ -1,14 +1,4 @@
-/* add css module styles here (optional) */
-
-._styles-module__test__3ybTi {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
-  text-align: center;
-}
-
-._index__backgroundModal__2brns{
+._2brns{
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.75);
     margin: 0;
@@ -17,7 +7,7 @@
     z-index: 1;
 }
 
-._index__modal__39tZ1{
+._39tZ1{
     z-index: 99;
     position: relative;
     margin: auto;
@@ -37,7 +27,7 @@
     background-color: white;
 }
 
-._index__closeContent__tmQDn{
+._tmQDn{
     position: absolute;
     bottom: 60%;
     left: 95%;
@@ -56,13 +46,13 @@
     align-items: center;
 }
 
-._index__message__o2Vy4{
+._o2Vy4{
     width: -moz-fit-content;
     width: fit-content;
     padding:0 20px;
     font-size: 18px;
 }
 
-._index__hidde__htA91{
+._htA91{
     display: none;
 }

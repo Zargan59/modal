@@ -1,17 +1,20 @@
-function Modal(message, isOpen) {
-  var _useState = useState(isOpen),
-    modalIsOpen = _useState[0],
-    setModalIsOpen = _useState[1];
+import React from 'react';
+
+function Modal(_ref) {
+  var message = _ref.message,
+    isOpen = _ref.isOpen,
+    setIsOpen = _ref.setIsOpen;
   var handleClose = function handleClose() {
-    setModalIsOpen(false);
+    setIsOpen(false);
   };
   var handleClickOutsideModal = function handleClickOutsideModal(e) {
-    if (e.target.className == "modal") {
+    if (e.target.className === "modal") {
+      console.log("Ferme la modale");
       handleClose();
     }
   };
   return /*#__PURE__*/React.createElement("div", {
-    className: modalIsOpen ? "backgroundModal " : "hidde"
+    className: isOpen ? "backgroundModal " : "hidde"
   }, /*#__PURE__*/React.createElement("div", {
     className: "modal",
     onClick: handleClickOutsideModal
